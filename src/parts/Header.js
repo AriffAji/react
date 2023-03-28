@@ -5,7 +5,7 @@ import BrandIcon from "../parts/IconText";
 
 export default function Header(props) {
   const getNavLinkClass = (path) => {
-    return props.location === path ? "active" : "";
+    return props.location === path ? " active" : "";
   };
 
   return (
