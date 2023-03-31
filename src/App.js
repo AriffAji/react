@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "../src/pages/LandingPage";
+import DetailPage from "pages/DetailPage";
+import Example from "../src/pages/Example";
 import "../src/assets/scss/style.scss";
 
 function App() {
@@ -8,7 +10,9 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" Component={LandingPage}></Route>
+          <Route exact path="/" Component={LandingPage}></Route>
+          <Route exact path="/properties/:id" Component={DetailPage}></Route>
+          <Route path="/example" Component={Example}></Route>
         </Routes>
       </Router>
     </div>
