@@ -23,7 +23,7 @@ export default class DetailPage extends Component {
     ];
     return (
       <>
-        <Header {...this.props}></Header>
+        <Header {...this.props} isCentered></Header>
         <PageDetailTitle breadcrumb={breadcrumb} data={ItemDetails}></PageDetailTitle>
         <FeaturedImage data={ItemDetails.imageUrls}></FeaturedImage>
         <section className="container">
